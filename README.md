@@ -2,7 +2,7 @@
 
 > 作者: lu.meng <lu.meng@danatech.com>
 
-![awesome-objc-formatter](http://odqo2zgxm.bkt.clouddn.com/awesome-objc-formatter.png)
+![awesome-objc-formatter](http://odqo2zgxm.bkt.clouddn.com/awesome-objc-formatter-logo.png)
 
 ### 描述
 `awesome-objc-formatter`是一款以`clang-format`为基础的`objc`文件

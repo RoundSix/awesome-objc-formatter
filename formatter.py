@@ -6,6 +6,7 @@ import utils.logger as logger
 from utils import common
 from subprocess import Popen, PIPE, run
 from abc import ABCMeta, abstractmethod
+from sys import exit
 
 
 class FormatterInterface(object):
@@ -44,7 +45,11 @@ class DryFormatter(FormatterInterface):
 class WetFormatter(FormatterInterface):
 
   def format(self, files):
-    logger.info('Start format...')
+    if len(files) == 0:
+      logger.info('Great! No file need to be formatted')
+      exit(0)
+    else:
+      logger.info('Start format...')
     for file in files:
       command = [
         './bin/formatter',
